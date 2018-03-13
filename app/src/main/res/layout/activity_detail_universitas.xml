@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.septian.sikptkis.DetailUniversitasActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:title="SI Universitas">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/et_nama_univ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Nama"
+                android:text="UIN BANDUNG" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <Button
+                android:id="@+id/btn_fakultas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List Fakultas" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
